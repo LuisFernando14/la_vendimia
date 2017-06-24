@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ventas</title>
+	<script src="include/js/jquery-3.1.1.min.js"></script> <!--It calls to JQuery, this line has to be first than the next lines-->
+	<!--BootStrap-->
+	<link rel="stylesheet" href="include/style/bootstrap.min.css"/> <!--link that contains the style sheet from BootStrap-->
+	<script src="include/js/bootstrap.min.js"> </script> <!--it calls to javascript from BootStrap-->
+</head>
+<body>
+	<div id="contenido">
+		
+	</div>
+
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4"></div>
+		<div class="col-md-4 text-center">
+			<a href="nuevaVenta.html" class="btn btn-lg btn-primary text-center">
+				<span class="glyphicon glyphicon-plus-sign"></span> Nueva Venta
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 text-center">
+			<label>
+				Ventas Activas
+			</label>
+		</div>
+		<div class="col-md-4"></div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<table class="table table-striped table-hover" id="ventasActivas">
+				<thead style="background-color: #AACED0">
+			    	<tr>
+			      		<th>Folio Venta</th>
+			      		<th>Clave cliente</th>
+			      		<th>Nombre</th>
+			      		<th>Total</th>
+			      		<th>Fecha</th>
+			    	</tr>
+			  	</thead>
+			  	<tbody>
+			  		
+			  	</tbody>
+			</table>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<script src="include/js/ventas.js"> </script>
+</body>
+</html>

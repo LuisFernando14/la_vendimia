@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Configuración</title>
+	<script src="include/js/jquery-3.1.1.min.js"></script> <!--It calls to JQuery, this line has to be first than the next lines-->
+	<!--BootStrap-->
+	<link rel="stylesheet" href="include/style/bootstrap.min.css"/> <!--link that contains the style sheet from BootStrap-->
+	<script src="include/js/bootstrap.min.js"> </script> <!--it calls to javascript from BootStrap-->
+</head>
+<body>
+	<div id="contenido">
+		
+	</div>
+	<div class="col-md-12">
+		<div class="panel panel-primary">
+	  		<div class="panel-heading">
+	    		<h3 class="panel-title">Configuración General</h3>
+	  		</div>
+	  		<div class="panel-body">
+    			<div class="row">
+    				<div class="col-md-2 text-right">
+    					<label style="color: green">
+    						Tasa Financiamiento:
+    					</label>
+    				</div>
+    				<div class="col-md-4 text-left">
+    					<input type="number" id="txtTasaFinanciamiento" name="" step="0.1" min="0" class="form-control" placeholder="00.00">
+    				</div>
+    				<div class="col-md-6">
+    					
+    				</div>
+    			</div>
+    			<br>
+    			<div class="row">
+    				<div class="col-md-2 text-right">
+    					<label style="color: green">
+    						% Enganche:
+    					</label>
+    				</div>
+    				<div class="col-md-4 text-left">
+    					<input type="number" id="txtEnganche" name="" step="0.1" min="0" class="form-control" placeholder="00.00">
+    				</div>
+    				<div class="col-md-6">
+    					
+    				</div>
+    			</div>
+    			<br>
+    			<div class="row">
+    				<div class="col-md-2 text-right">
+    					<label style="color: green">
+    						Plazo Máximo:
+    					</label>
+    				</div>
+    				<div class="col-md-4 text-left">
+    					<input type="number" id="txtPlazoMaximo" min="0" step="1" name="" class="form-control" placeholder="10">
+    				</div>
+    				<div class="col-md-6">
+    					
+    				</div>
+    			</div>
+	  		</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="col-md-6">
+					<input type="button" name="" id="btnCancelar" value="Cancelar" class="btn btn-lg btn-success">
+				</div>
+				<div class="col-md-6">
+					<input type="button" name="" id="btnSiguiente" value="Guardar" class="btn btn-lg btn-success">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="include/js/configuracion.js"> </script> <!--comment_value-->
+</body>
+</html>

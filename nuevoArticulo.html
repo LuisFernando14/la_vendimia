@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Nuevo Artículo
+	</title>
+	<script src="include/js/jquery-3.1.1.min.js"></script> <!--It calls to JQuery, this line has to be first than the next lines-->
+	<!--BootStrap-->
+	<link rel="stylesheet" href="include/style/bootstrap.min.css"/> <!--link that contains the style sheet from BootStrap-->
+	<script src="include/js/bootstrap.min.js"> </script> <!--it calls to javascript from BootStrap-->
+</head>
+<body>
+	<div id="contenido"></div>
+	<div class="col-md-12">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+	    		<h3 class="panel-title">Registro de Artículos</h3>
+	  		</div>
+	  		<div class="panel-body">
+	    		<div class="row">
+	    			<div class="col-md-4"></div>
+	    			<div class="col-md-4"></div>
+	    			<div class="col-md-4 text-center">
+	    				<label id="claveNuevoArticulo" style="color: green;">
+	    					Clave:
+	    				</label>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="form-group">
+		    			<div class="col-md-2 text-right">
+		    				<label>Descripción: </label>
+		    			</div>
+		    			<div class="col-md-4" style= "margin-left: 0px; padding-left: 0px;">
+		    				<input type="text" class="form-control text-left" required="" name="" id="txtDescripcionArticulo" placeholder="Descripción...">
+		    			</div>
+		    			<div class="col-md-6">
+		    			</div>
+	    			</div>
+	    		</div>
+	    		<br>
+	    		<div class="row">
+	    			<div class="form-group">
+		    			<div class="col-md-2 text-right">
+		    				<label>Modelo: </label>
+		    			</div>
+		    			<div class="col-md-4" style= "margin-left: 0px; padding-left: 0px;">
+		    				<input type="text" class="form-control text-left" required="" name="" id="txtModeloArticulo" placeholder="Modelo...">
+		    			</div>
+		    			<div class="col-md-6">
+		    			</div>
+	    			</div>
+	    		</div>
+	    		<br>
+	    		<div class="row">
+	    			<div class="form-group">
+		    			<div class="col-md-2 text-right">
+		    				<label>Precio: </label>
+		    			</div>
+		    			<div class="col-md-4" style= "margin-left: 0px; padding-left: 0px;">
+		    				<input type="number" min="0" step="0.1" class="form-control text-left" required="" name="" id="txtPrecioArticulo" placeholder="1410.95">
+		    			</div>
+		    			<div class="col-md-6">
+		    			</div>
+	    			</div>
+	    		</div>
+	    		<br>
+	    		<div class="row">
+	    			<div class="form-group">
+		    			<div class="col-md-2 text-right">
+		    				<label>Existencia: </label>
+		    			</div>
+		    			<div class="col-md-4" style= "margin-left: 0px; padding-left: 0px;">
+		    				<input type="number" min="0" step="1" class="form-control text-left" required="" name="" id="txtExistenciaArticulo" placeholder="20">
+		    			</div>
+		    			<div class="col-md-6">
+		    			</div>
+	    			</div>
+	    		</div>	    		
+	  		</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div id="mensajeSistema" style="color: red" class="col-md-4">
+				
+			</div>
+			<div class="col-md-4">
+				<div class="col-md-6">
+					<input type="button" name="" id="btnCancelar" value="Cancelar" class="btn btn-lg btn-success">
+				</div>
+				<div class="col-md-6">
+					<input type="submit" name="" id="btnSiguiente" value="Siguiente" class="btn btn-lg btn-success">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="include/js/nuevoArticulo.js"> </script>
+</body>
+</html>

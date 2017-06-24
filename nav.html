@@ -1,0 +1,43 @@
+<div id="app">
+    <div class="row" style="margin-bottom: 0px;">
+        <div class="col-md-4">
+            
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4 text-center">
+            <a href="index.html" style="font-family: arial; font-size: 1.5em; color: #00A946; vertical-align: bottom; padding-bottom: 0px; margin-bottom: 0px; text-decoration: none;">La vendimia</a>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-inverse" style="background-color: black;">
+	<div class="container-fluid">
+	<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+	</div>
+	<!-- {{@date('d-m-Y')}}-->
+	<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-2" aria-expanded="false" style="height: 1px;">
+		<ul class="nav navbar-nav">
+			<li class="dropdown">
+	    		<a href="#" class="dropdown-toggle" style="font-family: arial; font-size: 1.5em; color: #fff;" data-toggle="dropdown" role="button" aria-expanded="false">Inicio</a>
+	    		<ul class="dropdown-menu" role="menu">
+	                <li><a href="ventas.html" id="ventas">Ventas</a></li>
+	                <li class="divider"></li>
+	                <li><a href="clientes.html" id="clientes">Clientes</a></li>
+	                <li><a href="articulos.html" id="articulos">Artículos</a></li>
+	                <li><a href="configuracion.html" id="configuracion">Configuración</a></li>
+	    		</ul>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right" style="font-family: arial; font-size: 1.5em; color:#fff;">
+			<label style="vertical-align: bottom; margin-top: 0.3em; padding-top: 0.3em;">Fecha:&nbsp;&nbsp;</label> 
+			<label id="fecha"></label>
+		</ul>
+	</div>
+	</div>
+</nav>
+<script src="include/js/navigation.js"> </script> <!--comment_value-->

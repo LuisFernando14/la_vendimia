@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Artículos</title>
+	<script src="include/js/jquery-3.1.1.min.js"></script> <!--It calls to JQuery, this line has to be first than the next lines-->
+	<!--BootStrap-->
+	<link rel="stylesheet" href="include/style/bootstrap.min.css"/> <!--link that contains the style sheet from BootStrap-->
+	<script src="include/js/bootstrap.min.js"> </script> <!--it calls to javascript from BootStrap-->
+</head>
+<body>
+	<div id="contenido">
+		
+	</div>
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<a href="{{ url('/articulos/create') }}" class="btn btn-lg btn-primary text-center">
+				<span class="glyphicon glyphicon-plus-sign"></span> Nuevo Artículo
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 text-center">
+			<label>
+				Artículos Registrados
+			</label>
+		</div>
+		<div class="col-md-4"></div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<table class="table table-striped table-hover ">
+				<thead style="background-color: #AACED0">
+			    	<tr>
+			      		<th>Clave Artículo</th>
+			      		<th>Descripción</th>
+			      		<th>Acciones</th>
+			    	</tr>
+			  	</thead>
+			  	<tbody>
+			  		@foreach($articulos as $articulo)
+				  		<tr>
+				      		<td class="text-center">{{ $articulo->clave }}</td>
+				      		<td class="text-left">{{ $articulo->descripcion }}</td>
+				      		<td><a href="" style="text-decoration: none;">
+				      			<span style="color: black;" class="glyphicon glyphicon-pencil"></span>
+				      		</a></td>
+				    	</tr>
+			  		@endforeach
+			  	</tbody>
+			</table>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+</body>
+</html>
